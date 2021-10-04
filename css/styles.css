@@ -166,8 +166,6 @@ p:last-child {
 
 .contacts-item .link {
   display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .contact-icon {
@@ -181,6 +179,8 @@ p:last-child {
 }
 
 .mail-icon {
+  margin: auto;
+  margin-right: 10px;
   width: 16px;
   height: 12px;
  }
