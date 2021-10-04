@@ -164,9 +164,20 @@ p:last-child {
   margin-left: auto;
 }
 
+.contacts-item .link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .contact-icon {
   fill: var(--secondary-text-color);
   margin-right: 10px;
+}
+
+.contacts-item .link:hover .contact-icon,
+.contacts-item .link:hover .contact-icon {
+  fill: var(--accent-colour);
 }
 
 .mail-icon {
@@ -322,7 +333,15 @@ p:last-child {
   flex-wrap: wrap;
 }
 
-.pros-list .list-item {
+.pros-icons {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bgc);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.pros-list-item {
   margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 4 - var(--work-list-set-gap));
@@ -466,6 +485,10 @@ p:last-child {
 
 .companies {
   padding-top: 5px;
+}
+
+.companies-list {
+  display: flex;
 }
 
 /* ======PORTFOLIO BUTTON====== */
