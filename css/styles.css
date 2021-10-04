@@ -176,7 +176,7 @@ p:last-child {
 }
 
 .contacts-item .link:hover .contact-icon,
-.contacts-item .link:hover .contact-icon {
+.contacts-item .link:focus .contact-icon {
   fill: var(--accent-colour);
 }
 
@@ -231,6 +231,10 @@ p:last-child {
   color: var(--accent-colour);
 }
 
+.container.footer-box {
+  display: flex;
+}
+
 .adress {
   margin-top: 20px;
 }
@@ -274,8 +278,19 @@ p:last-child {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  
+  margin-top: 0px;
   margin-bottom: 20px;
+}
+
+.footer-list {
+ display: inline-block;
+}
+
+.footer-links {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 12px;
 }
 
 .footer-links-list {
@@ -530,6 +545,23 @@ p:last-child {
 
 .companies-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--work-list-set-gap));
+  margin-left: calc(-1 * var(--work-list-set-gap));
+}
+
+.companies-icons {
+  fill: var(--social-link-team-color);
+}
+
+.companies-list-item {
+  background-color: var(--secondary-bgc);
+  border: 1px solid var(--social-link-team-color);
+  border-radius: 4px;
+
+  margin-top: var(--work-list-set-gap);
+  margin-left: var(--work-list-set-gap);
+  flex-basis: calc(100% / 6 - var(--work-list-set-gap));
 }
 
 /* ======PORTFOLIO BUTTON====== */
