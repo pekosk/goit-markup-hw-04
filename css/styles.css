@@ -24,6 +24,7 @@
   --accent-secondary-color: #188ce8;
   --work-list-set-gap: 30px;
   --header-border-color: #ececec;
+  --social-link-team-color: #AFB1B8;
 }
 
 body {
@@ -420,6 +421,28 @@ p:last-child {
   padding-top: var(--work-list-set-gap);
   padding-bottom: var(--work-list-set-gap);
   background-color: var(--primary-white-color);
+}
+
+.social-links {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-links-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-links-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-links-icons {
+  width: 20px; 
+  height: 20px;
 }
 
 /* ======TEAM END====== */
