@@ -283,6 +283,10 @@ p:last-child {
   margin-bottom: 20px;
 }
 
+.container.footer-box {
+  justify-content: baseline;
+}
+
 .footer-list {
   display: inline-block;
 }
@@ -290,7 +294,6 @@ p:last-child {
 .footer-links {
   display: inline-block;
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-links-list {
