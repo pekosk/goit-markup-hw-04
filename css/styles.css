@@ -425,27 +425,48 @@ p:last-child {
 
 .social-links {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
+  align-content: center;
 }
 
 .social-links-item {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .social-links-item:not(:first-child) {
   margin-left: 10px;
 }
 
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
 .social-links-icons {
+  fill: var(--social-link-team-color);
   width: 20px; 
   height: 20px;
 }
 
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-colour);
+}
+
+.team-social-link:focus .social-links-icons,
+.team-social-link:hover .social-links-icons {
+  fill: var(--primary-white-color);
+}
+
 /* ======TEAM END====== */
+
+.companies {
+  padding-top: 5px;
+}
 
 /* ======PORTFOLIO BUTTON====== */
 
